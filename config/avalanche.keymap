@@ -90,11 +90,11 @@
 
         CONFIG {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &trans              &trans                           &rgb_ug RGB_COLOR_HSB(308,100,50)  &rgb_ug RGB_COLOR_HSB(334,100,50)  &rgb_ug RGB_COLOR_HSB(121,100,48)  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
-&trans  &kp HOME      &kp UP_ARROW    &kp END         &macro_vim_replace  &trans                           &rgb_ug RGB_COLOR_HSB(0,100,50)    &rgb_ug RGB_COLOR_HSB(182,100,50)  &rgb_ug RGB_COLOR_HSB(251,100,49)  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT           &trans           &trans                                             &trans                             &trans                             &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bt BT_CLR
-&trans  &trans        &trans          &trans          &trans              &trans           &trans  &trans  &trans                             &trans                             &rgb_ug RGB_EFR                    &rgb_ug RGB_EFF  &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
-        &trans        &trans          &trans          &trans              &macro_vim_save                  &trans                             &trans                             &trans                             &trans           &trans
+&trans        &trans        &trans          &trans          &trans              &trans                           &trans                           &trans                             &trans                             &trans           &trans           &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &kp END         &macro_vim_replace  &trans                           &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(182,100,50)  &rgb_ug RGB_COLOR_HSB(251,100,49)  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans        &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT           &trans           &trans                                           &trans                             &trans                             &trans           &trans           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans
+&trans        &trans        &trans          &trans          &trans              &trans           &trans  &trans  &trans                           &trans                             &rgb_ug RGB_EFR                    &rgb_ug RGB_EFF  &trans           &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+              &trans        &trans          &trans          &trans              &macro_vim_save                  &trans                           &trans                             &trans                             &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
@@ -110,11 +110,11 @@
             // ---------------------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&none   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp F6        &kp F7     &kp F8        &kp F9        &kp F10       &kp PRINTSCREEN
-&trans  &trans  &trans  &trans  &trans  &none                  &kp ASTERISK  &kp N7     &kp N8        &kp N9        &kp PLUS      &none
-&trans  &trans  &trans  &trans  &trans  &none   &none                        &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS        &none      &none
-&trans  &none   &none   &none   &none   &trans  &trans  &none  &none         &trans     &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp EQUAL  &none
-        &trans  &trans  &trans  &trans  &trans                 &trans        &trans     &trans        &trans        &kp NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
