@@ -89,11 +89,11 @@
 
         CONFIG {
             bindings = <
-&trans  &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &trans  &trans  &trans      &trans
-&trans  &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &trans  &trans  &trans      &trans
-&trans  &trans  &trans      &trans     &trans     &trans  &trans                  &bt BT_PRV  &trans  &trans  &bt BT_NXT  &trans  &trans  &trans
-&trans  &trans  &kp LA(F4)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans      &trans  &trans  &trans
-        &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &trans         &trans  &trans      &trans
+&trans  &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &kp LS(LC(I))  &trans  &trans      &trans
+&trans  &trans  &trans      &trans     &trans     &trans  &trans                  &bt BT_PRV  &trans         &trans  &bt BT_NXT  &trans  &trans  &trans
+&trans  &trans  &kp LA(F4)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans      &trans         &trans  &trans      &trans  &trans  &trans
+        &trans  &trans      &trans     &trans     &trans                  &trans  &trans      &trans         &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
